@@ -12,7 +12,7 @@ export default function Home() {
   } = useForm();
   const onSubmit = (data) => {
     let result; // define result here
-    fetch("/api/contact", {
+    fetch("https://form-wine-sigma.vercel.app/api/contact", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
